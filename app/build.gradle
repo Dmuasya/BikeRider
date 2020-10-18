@@ -15,6 +15,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -38,7 +39,20 @@ dependencies {
     // Because RxAndroid releases are few and far between, it is recommended you also
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
     implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+    //FirebaseUI
     implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+
+    //Material
+    implementation 'com.google.android.material:material:1.2.1'
+
+    //Firebase Database
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+
 
 }
 
